@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Struttura il tuo blog Epicode in modo ordinato e semantico."
+    />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+    </style>
+    <style>
+      tr,
+      td {
+        text-align: right;
+      }
+    </style>
+    <style>
+      nav a {
+        margin-right: 15px;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      iframe {
+        margin-top: 20px;
+        width: 560px;
+        height: 315px;
+      }
+    </style>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 5px;
+      }
+    </style>
+    <style>
+      .correlati {
+        padding: 10px;
+        margin-left: 20px;
+        max-width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.svg" alt="Logo del sito" width="150" />
+
+      <h1>Epicode - Il blog dei developers</h1>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Articoli</a>
+        <a href="#">Lavora con noi</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <article>
+          <h2>
+            Come creare un template per i post di <span class="autore">Mario Rossi - pubblicato il <span class="data">25-10-2020</span></span>
+          </h2>
+
+          <p style="font-size: larger">
+            la prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine
+          </p>
+
+          <h3>Le varie aree saranno quindi suddivise in:</h3>
+
+          <ul>
+            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>Contenuti centrali variabilidel tag &lt;main&gt; (corpo centrale)</li>
+            <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+          </ul>
+
+          <h4>Formattazione del codice</h4>
+
+          <h3>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</h3>
+
+          <ol>
+            <li>Progettare il markup assegnando ad ogni specifico tag appropriato</li>
+            <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+
+          <table id="Diffusione dei CSS">
+            <caption>
+              <strong>Diffusione dei CSS</strong>
+            </caption>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: large">
+            Un test di validazzione potrà essere fatto tramite <a href="https://jigsaw.w3.org/css-validator/" target="_blank">il tool online</a> dedicato allo
+            scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+          </p>
+
+          <iframe src="https://www.youtube.com/embed/NdGce0MfwnI?si=RJFOi1dnnWuzMnxh" frameborder="0"></iframe>
+          <h4 style="font-size: large">Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h4>
+          <form>
+            <input type="email" placeholder="epicode@gmail.com" required />
+            <button type="submit">Iscriviti</button>
+          </form>
+        </article>
+
+        <h3 style="margin-bottom: 1%;font-size: larger;">Articoli correlati</h3>
+
+          <strong>Validare il codice HTM</strong><br />
+          Categoria: develop<br />
+          Data: 18-9-2020
+        </p>
+
+        <p>
+          <strong>Correggere la sintassi</strong><br />
+          Categoria: develop<br />
+          Data: 16-9-2020
+        </p>
+
+        <p>
+          <strong>Meno Kb nella pagina</strong><br />
+          Categoria: ottimizzazione<br />
+          Data: 30-9-2020
+        </p>
+      </div>
+    </main>
+    <footer id="footer">
+      <p>Blog Epicode ©2023</p>
+    </footer>
+    <span
+      >Testata online di Mario Rossi, registrata con prot. n.213/2018 -
+      <a href="https://maps.app.goo.gl/wdfaneqkn6tYiegZ9" target="_blank">via Luigi Einaudi 2</a> - Milano. P.IVA 00112233.</span
+    >
+    <p>Per contattarci scrivi a <a href="info@Epicode@gmail.com">epicode@gmail.com</a></p>
+  </body>
+</html>
